@@ -85,8 +85,7 @@
         "no-implied-eval": "error",
         "no-floating-decimal": "error",
         "no-implicit-coercion": "error",
-        // todo: waring
-        "no-magic-numbers": "off",
+        "no-magic-numbers": "warn",
         "no-multi-assign": "error",
         "no-multi-str": "warn",
         "no-negated-condition": "warn",
