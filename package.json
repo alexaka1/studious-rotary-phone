@@ -4,12 +4,17 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run app-shell:prod",
+    "build-dev": "npm run app-shell:prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
-    "app-shell:prod": "ng run AngularPortfolio:app-shell:development"
+    "app-shell:prod": "ng run AngularPortfolio:app-shell:development",
+    "dev:ssr": "ng run test:serve-ssr",
+    "serve:ssr": "node dist/test/server/main.js",
+    "build:ssr": "ng build && ng run AngularPortfolio:server",
+    "prerender": "ng run AngularPortfolio:prerender",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
