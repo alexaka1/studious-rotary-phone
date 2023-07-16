@@ -13,7 +13,7 @@
     "dev:ssr": "ng run AngularPortfolio:serve-ssr",
     "serve:ssr": "node dist/AngularPortfolio/server/main.js",
     "build:ssr": "ng build && ng run AngularPortfolio:server",
-    "prerender": "ng run AngularPortfolio:prerender",
+    "prerender": "ng run AngularPortfolio:prerender --routes-file dev/routes.txt",
     "vercel-build": "npm run build:ssr"
   },
   "private": true,
