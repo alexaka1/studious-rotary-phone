@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-dev": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
@@ -13,7 +13,8 @@
     "dev:ssr": "ng run AngularPortfolio:serve-ssr",
     "serve:ssr": "node dist/AngularPortfolio/server/main.js",
     "build:ssr": "ng build && ng run AngularPortfolio:server",
-    "prerender": "ng run AngularPortfolio:prerender"
+    "prerender": "ng run AngularPortfolio:prerender",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
