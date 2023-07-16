@@ -15,8 +15,7 @@
     "serve:ssr": "node dist/AngularPortfolio/server/main.js",
     "build:ssr": "ng build && ng run AngularPortfolio:server",
     "prerender": "ng run AngularPortfolio:prerender --routes-file dev/routes.txt",
-    "vercel-build": "npm run build:ssr",
-    "lint-staged": "npx husky add .husky/pre-commit \"npx lint-staged\""
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
@@ -56,7 +55,7 @@
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^8.0.3",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
@@ -65,7 +64,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "lint-staged": "^13.2.3",
-    "prettier": "^3.0.0",
+    "prettier": "^2.4.1",
     "typescript": "~5.1.3"
   }
 }
