@@ -9,8 +9,5 @@
     "api/index.js": {
       "includeFiles": "dist/AngularPortfolio/browser/**"
     }
-  },
-  "env": {
-    "HUSKY": "0"
   }
 }
