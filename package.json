@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "lint:fix": "ng lint --fix"
+    "lint:fix": "ng lint --fix",
+    "ng:update": "ng update @angular/core@16 @angular/cli@16 @angular-eslint/schematics@16"
   },
   "private": true,
   "dependencies": {
