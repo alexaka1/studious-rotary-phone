@@ -146,7 +146,7 @@
             "allowNullOrUndefined": true
           }
         ],
-        "@angular-eslint/template/i18n": "warn",
+        "@angular-eslint/template/i18n": "off",
         "@angular-eslint/template/no-inline-styles": "off",
         "@angular-eslint/template/use-track-by-function": "warn",
         "@angular-eslint/template/attributes-order": "warn",
