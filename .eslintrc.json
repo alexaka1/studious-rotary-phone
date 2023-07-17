@@ -22,7 +22,8 @@
         "plugin:import/typescript",
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "plugin:tailwindcss/recommended"
       ],
       "rules": {
         "@angular-eslint/component-selector": [
@@ -128,7 +129,9 @@
           "error"
         ],
         // import
-        "import/no-unresolved": "off"
+        "import/no-unresolved": "off",
+        // tailwindcss
+        "no-custom-classname": "off"
       }
     },
     {
@@ -137,7 +140,8 @@
       ],
       "extends": [
         "plugin:@angular-eslint/template/recommended",
-        "plugin:prettier/recommended"
+        "plugin:prettier/recommended",
+        "plugin:tailwindcss/recommended"
       ],
       "rules": {
         "@angular-eslint/template/eqeqeq": [
@@ -156,7 +160,9 @@
         "@angular-eslint/template/label-has-associated-control": "warn",
         "@angular-eslint/template/elements-content": "off",
         "@angular-eslint/template/no-interpolation-in-attributes": "warn",
-        "@angular-eslint/template/alt-text": "error"
+        "@angular-eslint/template/alt-text": "error",
+        // tailwindcss
+        "no-custom-classname": "off"
       }
     }
   ]
