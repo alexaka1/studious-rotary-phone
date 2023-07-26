@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  templateUrl: './blog.component.html',
+  styleUrls: ['./blog.component.scss'],
 })
-export class HomeComponent {}
+export class BlogComponent {}

@@ -181,7 +181,8 @@
           "options": {
             "routes": [
               "/"
-            ]
+            ],
+            "guessRoutes": true
           },
           "configurations": {
             "production": {
