@@ -1,1 +1,5 @@
 <p>blog works!</p>
+
+<ul *ngFor="let blog of posts">
+  <li>{{ blog.fields["content"] | json }}</li>
+</ul>
