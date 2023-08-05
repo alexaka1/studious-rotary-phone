@@ -112,7 +112,7 @@
     /* Default catch clause variables as 'unknown' instead of 'any'. */
     "alwaysStrict": true,
     /* Ensure 'use strict' is always emitted. */
-    "noUnusedLocals": false, // ez jó lenne, de az unused importokra is error-t ad, arra viszont csak warning-ot szeretnénk eslint-el
+    "noUnusedLocals": false,
     /* Enable error reporting when local variables aren't read. */
     "noUnusedParameters": true,
     /* Raise an error when a function parameter isn't read. */
@@ -121,7 +121,7 @@
     /* Enable error reporting for codepaths that do not explicitly return in a function. */
     "noFallthroughCasesInSwitch": true,
     /* Enable error reporting for fallthrough cases in switch statements. */
-    // "noUncheckedIndexedAccess": true, // ez most elég sok helyen probléma, ideértve a swagger generált cuccokat is
+    "noUncheckedIndexedAccess": true,
     /* Add 'undefined' to a type when accessed using an index. */
     "noImplicitOverride": true,
     /* Ensure overriding members in derived classes are marked with an override modifier. */

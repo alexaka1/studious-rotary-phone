@@ -49,7 +49,10 @@
             ],
             "scripts": [],
             "serviceWorker": true,
-            "ngswConfigPath": "ngsw-config.json"
+            "ngswConfigPath": "ngsw-config.json",
+            "allowedCommonJsDependencies": [
+              "contentful", "dotenv"
+            ]
           },
           "configurations": {
             "production": {
