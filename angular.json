@@ -29,7 +29,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@ngx-env/builder:browser",
           "options": {
             "outputPath": "dist/AngularPortfolio/browser",
             "index": "src/index.html",
@@ -51,8 +51,11 @@
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json",
             "allowedCommonJsDependencies": [
-              "contentful", "dotenv"
-            ]
+              "contentful"
+            ],
+            "ngxEnv": {
+              "prefix": ""
+            }
           },
           "configurations": {
             "production": {
@@ -99,7 +102,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@ngx-env/builder:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "AngularPortfolio:build:production"
@@ -111,13 +114,13 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "builder": "@ngx-env/builder:extract-i18n",
           "options": {
             "browserTarget": "AngularPortfolio:build"
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@ngx-env/builder:karma",
           "options": {
             "polyfills": [
               "zone.js",
@@ -147,7 +150,7 @@
           }
         },
         "server": {
-          "builder": "@angular-devkit/build-angular:server",
+          "builder": "@ngx-env/builder:server",
           "options": {
             "outputPath": "dist/AngularPortfolio/server",
             "main": "server.ts",
