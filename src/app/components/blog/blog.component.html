@@ -1,5 +1,8 @@
 <p>blog works!</p>
 
 <ul *ngFor="let blog of posts">
-  <li>{{ blog.fields["content"] | json }}</li>
+  <h1 class="text-2xl font-bold">{{ blog.fields["title"] }}</h1>
+  <!--  <h2>{{ blog.fields["author"] }}</h2>-->
+  <div class="prose" [innerHTML]="returnHtmlFromRichText(blog.fields['content'])"></div>
+  <hr />
 </ul>
