@@ -21,7 +21,7 @@ const options: Options = {
     [INLINES.HYPERLINK]: () => 'HYPERLINK',
     [INLINES.EMBEDDED_ENTRY]: () => 'EMBEDDED_ENTRY',
     [INLINES.ENTRY_HYPERLINK]: () => 'ENTRY_HYPERLINK',
-    [BLOCKS.EMBEDDED_ENTRY]: (node) => `${node.data['target'].sys.id}`,
+    [BLOCKS.EMBEDDED_ENTRY]: (node) => `todo: image ${node.data['target'].sys.id}`,
     [BLOCKS.EMBEDDED_ASSET]: () => 'BLOCKEMBEDDED_Asset',
     [BLOCKS.EMBEDDED_RESOURCE]: () => 'BLOCKEMBEDDED_Resource',
   },
